@@ -55,5 +55,4 @@ const binaryCode = sourceCodeWithoutComments.map((line, lineIndex) => {
   return translated.join(" ");
 });
 
-console.log(binaryCode);
 fs.writeFileSync(output, binaryCode.join(" "), { encoding: "utf-8" });
