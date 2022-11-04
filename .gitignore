@@ -1,0 +1,7 @@
+node_modules
+coverage
+.*
+!.gitignore
+!.prettierrc
+source.dcaasm
+!.npmrc
