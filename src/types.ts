@@ -11,7 +11,7 @@ import {
 export const isInstruction = (data: string): data is typeof Instructions[number] =>
   Instructions.includes(data as any);
 export const isRegister = (data: string): data is typeof Registers[number] =>
-  Registers.includes(data.toLowerCase() as any);
+  Registers.includes(data.toUpperCase() as any);
 
 export const byteStringToHalfWord = (byteString: string): HalfWord => {
   const normalizedValue = byteString.padStart(HALF_WORD_LENGTH, "0");
