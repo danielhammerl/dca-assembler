@@ -61,7 +61,7 @@ const binaryCode = sourceCodeWithoutComments
 
     return translated.join(" ");
   })
-  .filter((item) => item !== "");
+  .filter(Boolean);
 
 const result = binaryCode.join(" ");
 
