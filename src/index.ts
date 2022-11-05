@@ -27,6 +27,10 @@ const sourceCodeWithoutComments = sourceCode
   .map((item) => item.trim());
 
 const binaryCode = sourceCodeWithoutComments.map((line, lineIndex) => {
+  if (!line || line.length === 0) {
+    return;
+  }
+
   const lineNumber = lineIndex + 1;
   const [operation, operand1, operand2] = line.split(" ");
   let translated: Byte[] = [];
