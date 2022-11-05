@@ -57,7 +57,7 @@ const binaryCode = sourceCodeWithoutComments.map((line, lineIndex) => {
   });
 
   return translated.join(" ");
-});
+}).filter(Boolean);
 
 const result = binaryCode.join(" ");
 
