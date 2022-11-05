@@ -6,7 +6,7 @@ import { Byte, InstructionBinaryMap, registerBinaryCode } from "@danielhammerl/d
 import { decToHalfWord, hexToDec, isInstruction, isRegister } from "./types";
 import { throwError } from "./error";
 
-const output = process.argv[3] || "./source.dcabin";
+const output = process.argv?.[3];
 
 const sourceCode = fs
   .readFileSync(process.argv[2] || "./source.dcaasm", { encoding: "utf-8" })
@@ -55,4 +55,10 @@ const binaryCode = sourceCodeWithoutComments.map((line, lineIndex) => {
   return translated.join(" ");
 });
 
-fs.writeFileSync(output, binaryCode.join(" "), { encoding: "utf-8" });
+const result = binaryCode.join(" ");
+
+if (output) {
+  fs.writeFileSync(output, result, { encoding: "utf-8" });
+} else {
+  console.log(result);
+}
