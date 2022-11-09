@@ -29,4 +29,12 @@ export const decToHalfWord = (dec: number): HalfWord => {
   return byteStringToHalfWord(halfWordAsString);
 };
 
+export const byteToDec = (byte: Byte): number => {
+  return Number.parseInt(byte, 2);
+};
+
+export const halfWordToDec = (halfWord: HalfWord): number => {
+  return Number.parseInt(halfWord.join(""), 2);
+};
+
 export const hexToDec = (hex: string): number => parseInt(hex.replaceAll("#", ""), 16);
