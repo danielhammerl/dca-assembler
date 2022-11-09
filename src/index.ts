@@ -1,19 +1,24 @@
 #!/usr/bin/env ts-node-script
 import fs from "fs";
-import { assemble } from "./assembler";
+import { assemble, assembleBinary } from "./assembler";
+import { program } from "commander";
 
-const output = process.argv?.[3];
+program
+  .argument("[source]", "source file", "./source.dcabin")
+  .argument("[output]", "output file")
+  .option("-b, --binary", "as binary data", false)
+  .action((source, output, options) => {
+    const sourceCode = fs.readFileSync(source || "./input.txt", { encoding: "utf-8" }).toString();
 
-const sourceCode = fs
-  .readFileSync(process.argv[2] || "./input.txt", { encoding: "utf-8" })
-  .toString();
+    const result: string | Buffer = options.binary
+      ? assembleBinary(sourceCode)
+      : assemble(sourceCode);
 
-// first, remove comments
+    if (output) {
+      fs.writeFileSync(output, result, { encoding: options.binary ? undefined : "utf-8" });
+    } else {
+      console.log(result);
+    }
+  });
 
-const result = assemble(sourceCode);
-
-if (output) {
-  fs.writeFileSync(output, result, { encoding: "utf-8" });
-} else {
-  console.log(result);
-}
+program.parse();

@@ -38,3 +38,7 @@ export const halfWordToDec = (halfWord: HalfWord): number => {
 };
 
 export const hexToDec = (hex: string): number => parseInt(hex.replaceAll("#", ""), 16);
+
+export function nonEmpty<T>(data?: T | undefined | null): data is T {
+  return data !== undefined && data !== null;
+}

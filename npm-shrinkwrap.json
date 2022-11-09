@@ -10,6 +10,7 @@
       "license": "ISC",
       "dependencies": {
         "@danielhammerl/dca-architecture": "^0.3.2",
+        "commander": "^9.4.1",
         "jest": "^29.3.1",
         "ts-jest": "^29.0.3",
         "ts-node": "^10.9.1"
@@ -1428,6 +1429,14 @@
       "version": "1.1.4",
       "resolved": "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz",
       "integrity": "sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA=="
+    },
+    "node_modules/commander": {
+      "version": "9.4.1",
+      "resolved": "https://registry.npmjs.org/commander/-/commander-9.4.1.tgz",
+      "integrity": "sha512-5EEkTNyHNGFPD2H+c/dXXfQZYa/scCKasxWcXJaWnNJ99pnQN9Vnmqow+p+PlFPE63Q6mThaZws1T+HxfpgtPw==",
+      "engines": {
+        "node": "^12.20.0 || >=14"
+      }
     },
     "node_modules/concat-map": {
       "version": "0.0.1",
@@ -4528,6 +4537,11 @@
       "version": "1.1.4",
       "resolved": "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz",
       "integrity": "sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA=="
+    },
+    "commander": {
+      "version": "9.4.1",
+      "resolved": "https://registry.npmjs.org/commander/-/commander-9.4.1.tgz",
+      "integrity": "sha512-5EEkTNyHNGFPD2H+c/dXXfQZYa/scCKasxWcXJaWnNJ99pnQN9Vnmqow+p+PlFPE63Q6mThaZws1T+HxfpgtPw=="
     },
     "concat-map": {
       "version": "0.0.1",
