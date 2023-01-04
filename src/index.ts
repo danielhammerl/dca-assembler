@@ -6,7 +6,7 @@ import { program } from "commander";
 program
   .argument("[source]", "source file", "./source.dcabin")
   .argument("[output]", "output file")
-  .option("-b, --binary", "as binary data", false)
+  .option("-b, --binary", "as binary data", true)
   .action((source, output, options) => {
     const sourceCode = fs.readFileSync(source || "./input.txt", { encoding: "utf-8" }).toString();
 
