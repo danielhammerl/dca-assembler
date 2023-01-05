@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@danielhammerl/dca-architecture": "^0.5.0",
+    "@danielhammerl/dca-architecture": "^0.6.0",
     "commander": "^9.4.1",
     "jest": "^29.3.1",
     "ts-jest": "^29.0.3",

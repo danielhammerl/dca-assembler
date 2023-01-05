@@ -9,7 +9,7 @@
       "version": "0.1.0",
       "license": "ISC",
       "dependencies": {
-        "@danielhammerl/dca-architecture": "^0.5.0",
+        "@danielhammerl/dca-architecture": "^0.6.0",
         "commander": "^9.4.1",
         "jest": "^29.3.1",
         "ts-jest": "^29.0.3",
@@ -583,9 +583,9 @@
       }
     },
     "node_modules/@danielhammerl/dca-architecture": {
-      "version": "0.5.2",
-      "resolved": "http://dham-raspberry:12345/@danielhammerl%2fdca-architecture/-/dca-architecture-0.5.2.tgz",
-      "integrity": "sha512-MUw6nR9wy/zaRTriMs5SECikA9Ug3kQ28JBTfSRQfzGj2Uy2NbulKLtW0XJi1+n7jAh6m5ZVInbUzBHXddA44Q==",
+      "version": "0.6.1",
+      "resolved": "http://dham-raspberry:12345/@danielhammerl%2fdca-architecture/-/dca-architecture-0.6.1.tgz",
+      "integrity": "sha512-PppIQHfEcOF9XKr1nl2oEt+uP2+OQg5vktJgo4/umbJCrMHhdCwZ2LLKoUXuuxrLLeVA0nqaQaXWIjTGskcq0w==",
       "dependencies": {
         "typescript": "^4.8.4"
       }
