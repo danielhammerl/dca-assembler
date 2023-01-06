@@ -4,7 +4,7 @@ import { assemble, assembleBinary } from "./assembler";
 import { program } from "commander";
 
 program
-  .argument("[source]", "source file", "./source.dcabin")
+  .argument("[source]", "source file", "./source.dcaasm")
   .argument("[output]", "output file")
   .option("-b, --binary", "as binary data", true)
   .action((source, output, options) => {
